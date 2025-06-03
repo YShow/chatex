@@ -1,0 +1,17 @@
+
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "iml";
+message AuthMessage {
+	string username = 1;
+	string password = 2;
+}
+
+message Reject {
+	string reason = 1;
+}
+
+message TextMessage {
+	string message = 1;
+	uint64 timestamp = 2;
+}
